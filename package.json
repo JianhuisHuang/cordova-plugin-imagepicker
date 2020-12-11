@@ -1,0 +1,69 @@
+{
+  "_from": "git+https://github.com/giantss/cordova-plugin-ImagePicker.git#1.2.2",
+  "_id": "cordova-plugin-imagepicker@1.2.2",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/cordova-plugin-imagepicker",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "git+https://github.com/giantss/cordova-plugin-ImagePicker.git#1.2.2",
+    "rawSpec": "git+https://github.com/giantss/cordova-plugin-ImagePicker.git#1.2.2",
+    "saveSpec": "git+https://github.com/giantss/cordova-plugin-ImagePicker.git#1.2.2",
+    "fetchSpec": "https://github.com/giantss/cordova-plugin-ImagePicker.git",
+    "gitCommittish": "1.2.2"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "git+https://github.com/giantss/cordova-plugin-ImagePicker.git#532abaadf5ab7d86dc23227fd2a2a28063cedf38",
+  "_spec": "git+https://github.com/giantss/cordova-plugin-ImagePicker.git#1.2.2",
+  "_where": "/Users/jianhui/Desktop/Projects/WaoPhoto/waophotoapp",
+  "author": {
+    "name": "giantss"
+  },
+  "bugs": {
+    "url": "https://github.com/giantss/cordova-plugin-ImagePicker/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-plugin-imagepicker",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "dependencies": {
+    "async": "^2.6.0"
+  },
+  "deprecated": false,
+  "description": "Cordova ImagePicker Plugin",
+  "devDependencies": {
+    "jshint": "^0.1.8"
+  },
+  "engines": {
+    "cordovaDependencies": {
+      "1.0.0": {
+        "cordova-android": ">6.0.0"
+      },
+      "2.0.0": {
+        "cordova": ">100"
+      }
+    }
+  },
+  "homepage": "https://github.com/giantss/cordova-plugin-ImagePicker#readme",
+  "keywords": [
+    "cordova",
+    "cordova-ios",
+    "cordova-android",
+    "ImagePicker"
+  ],
+  "license": "Apache-2.0",
+  "name": "cordova-plugin-imagepicker",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/giantss/cordova-plugin-ImagePicker.git"
+  },
+  "version": "1.2.2"
+}
