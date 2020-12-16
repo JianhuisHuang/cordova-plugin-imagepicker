@@ -999,16 +999,25 @@
 - (void)setPreferredLanguage:(NSString *)preferredLanguage {
     _preferredLanguage = preferredLanguage;
     
-    if (!preferredLanguage || !preferredLanguage.length) {
-        preferredLanguage = [NSLocale preferredLanguages].firstObject;
-    }
     if ([preferredLanguage rangeOfString:@"zh-Hans"].location != NSNotFound) {
         preferredLanguage = @"zh-Hans";
     } else if ([preferredLanguage rangeOfString:@"zh-Hant"].location != NSNotFound) {
         preferredLanguage = @"zh-Hant";
     } else if ([preferredLanguage rangeOfString:@"vi"].location != NSNotFound) {
         preferredLanguage = @"vi";
-    } else {
+    } else if ([preferredLanguage rangeOfString:@"de"].location != NSNotFound) {
+        preferredLanguage = @"de";
+    }else if ([preferredLanguage rangeOfString:@"es"].location != NSNotFound) {
+        preferredLanguage = @"es";
+    }else if ([preferredLanguage rangeOfString:@"fr"].location != NSNotFound) {
+        preferredLanguage = @"fr";
+    }else if ([preferredLanguage rangeOfString:@"it"].location != NSNotFound) {
+        preferredLanguage = @"it";
+    }else if ([preferredLanguage rangeOfString:@"ru"].location != NSNotFound) {
+        preferredLanguage = @"ru";
+    }else if ([preferredLanguage rangeOfString:@"ja"].location != NSNotFound) {
+        preferredLanguage = @"ja";
+    }else {
         preferredLanguage = @"en";
     }
     _languageBundle = [NSBundle bundleWithPath:[[NSBundle tz_imagePickerBundle] pathForResource:preferredLanguage ofType:@"lproj"]];
