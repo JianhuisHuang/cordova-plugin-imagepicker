@@ -999,6 +999,9 @@
 - (void)setPreferredLanguage:(NSString *)preferredLanguage {
     _preferredLanguage = preferredLanguage;
     
+    if (!preferredLanguage || !preferredLanguage.length) {
+        preferredLanguage = [NSLocale preferredLanguages].firstObject;
+    }
     if ([preferredLanguage rangeOfString:@"zh-Hans"].location != NSNotFound) {
         preferredLanguage = @"zh-Hans";
     } else if ([preferredLanguage rangeOfString:@"zh-Hant"].location != NSNotFound) {
